@@ -1,0 +1,39 @@
+.header{
+	// max-width: 1440px;
+	width: 1440px;
+	height: 640px;
+	background-color: #000;
+
+	img{
+		opacity: 0.5;
+		// width: 1440px;
+		// height: 640px;
+	}
+
+	&__main-title{
+		width: 260px;
+		height: 58px;
+
+
+		position: absolute;
+		top: 30px;
+		left: 4vw;
+
+		background-image: url(/img/site-logo-1.png);
+		background-repeat: no-repeat;
+
+		&--anker{
+			height: 200px;
+		}
+	}
+
+	&__right-box{
+		width: 780px;
+		height: 740px;
+		background-color: #222;
+		position: absolute;
+		right: 0;
+		top:0;
+		z-index: -1;
+	}
+}

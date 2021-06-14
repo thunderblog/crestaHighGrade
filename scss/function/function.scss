@@ -1,0 +1,3 @@
+@function Divide($numerator,$denominator){
+	@return round($numerator/$denominator);
+}
