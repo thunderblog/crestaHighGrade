@@ -1,36 +1,3 @@
-@import url(c:\Users\user\Documents\crestaHighGrade\css\destyle.css);
-@import url(../setting/_size.scss);
-body {
-  margin: 0;
-}
-
-.header {
-  max-width: 1440px;
-  width: 1440px;
-  position: relative;
-  background-color: #000;
-  margin: 0 auto;
-}
-
-.header__main-title {
-  width: 260px;
-  height: 58px;
-  z-index: 1;
-  background-image: url(/img/site-logo.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 30px;
-  left: 4vw;
-}
-
-.header__main-title--anker {
-  height: 200px;
-}
-
-.header__nav {
-  display: none;
-}
-
 /****************
 first-view
 ***************/
@@ -52,6 +19,7 @@ first-view
   height: 640px;
   background-color: #000;
   opacity: 0.8;
+  z-index: 3;
 }
 
 .first-view__right-box {
@@ -70,4 +38,4 @@ first-view
   top: 10rem;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=first-view.css.map */

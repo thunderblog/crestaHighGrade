@@ -1,0 +1,47 @@
+@import "../setting/color";
+@import "../setting/size";
+@import "../setting/typography";
+
+.first-view{
+	max-width: $first-view-max-width;
+	position: relative;
+	margin: 0 auto;
+
+	&__image{
+		background-image: url(/img/header__image.png);
+		background-repeat: no-repeat;
+		background-position: center 0;
+
+		width: $ifrst-view-image-width;
+		height: 640px;
+		background-color: $color-black;
+		opacity: 0.8;
+		z-index: 3;
+	}
+
+	&__right-box{
+		width: 780px;
+		height: 740px;
+		background-color: $color-black;
+		position: absolute;
+		right: 0;
+		top:0;
+		z-index: -1;
+	}
+
+	&__message{
+		position: absolute;
+
+		right: 5vw;
+		//right: 0;
+		top: $first-view-message-top-position;
+
+		color: $color-white;
+
+		&--upper-text{
+			@extend %__font-size-20px;
+			//color: red;
+		}
+	}
+
+}
