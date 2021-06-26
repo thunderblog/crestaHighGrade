@@ -1,10 +1,37 @@
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
 /****************
 first-view
 ***************/
-.first-view__message--upper-text {
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+.first-view__message--upper-text, .first-view__message--middle-text {
   font-size: 20px;
 }
 
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
 .first-view {
   max-width: 1440px;
   position: relative;
@@ -18,8 +45,17 @@ first-view
   width: 1100px;
   height: 640px;
   background-color: #000;
-  opacity: 0.8;
-  z-index: 3;
+}
+
+.first-view__image::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 640px;
 }
 
 .first-view__right-box {
@@ -34,8 +70,13 @@ first-view
 
 .first-view__message {
   position: absolute;
-  right: 5vw;
+  right: 10rem;
   top: 10rem;
   color: #fff;
+}
+
+.first-view__message--bottom-text {
+  font-size: 72px;
+  line-height: calc(86em / 72);
 }
 /*# sourceMappingURL=first-view.css.map */

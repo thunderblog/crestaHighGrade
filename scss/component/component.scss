@@ -1,0 +1,18 @@
+@import "../setting/color";
+@import "../setting/size";
+@import "../setting/typography";
+
+
+
+.button-common-design{
+	width: $button-common-design-width;
+	height: $button-common-design-height;
+	background-color: $color-black;
+	color: $color-white;
+	font-size: $button-common-font-size;
+	font-weight: $button-common-font-weight;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}

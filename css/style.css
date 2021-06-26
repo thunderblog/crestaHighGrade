@@ -1,5 +1,17 @@
 @import url(c:\Users\user\Documents\crestaHighGrade\css\destyle.css);
 @import url(../setting/_size.scss);
+.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+  margin-left: 30px;
+}
+
+.middle-contents-margin-top {
+  margin-top: 220px;
+}
+
+.works-culture-margin-top {
+  margin-top: 80px !important;
+}
+
 body {
   margin: 0;
 }
@@ -31,13 +43,40 @@ body {
   display: none;
 }
 
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
 /****************
 first-view
 ***************/
-.first-view__message--upper-text {
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+.first-view__message--upper-text, .first-view__message--middle-text {
   font-size: 20px;
 }
 
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
 .first-view {
   max-width: 1440px;
   position: relative;
@@ -51,7 +90,17 @@ first-view
   width: 1100px;
   height: 640px;
   background-color: #000;
-  opacity: 0.8;
+}
+
+.first-view__image::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 640px;
 }
 
 .first-view__right-box {
@@ -66,8 +115,230 @@ first-view
 
 .first-view__message {
   position: absolute;
-  right: 5vw;
+  right: 10rem;
   top: 10rem;
   color: #fff;
+}
+
+.first-view__message--bottom-text {
+  font-size: 72px;
+  line-height: calc(86em / 72);
+}
+
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+.first-view__message--upper-text, .first-view__message--middle-text {
+  font-size: 20px;
+}
+
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+  margin-left: 30px;
+}
+
+.middle-contents-margin-top {
+  margin-top: 220px;
+}
+
+.works-culture-margin-top {
+  margin-top: 80px !important;
+}
+
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+.first-view__message--upper-text, .first-view__message--middle-text {
+  font-size: 20px;
+}
+
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.button-common-design, .middle-contents__about-whitebox--button {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.middle-contents {
+  position: relative;
+}
+
+.middle-contents__about {
+  width: 1100px;
+  height: 607px;
+  margin: 0 auto;
+  background-image: url(/img/about-img.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle-contents__about-whitebox {
+  background-color: #fff;
+  width: 590px;
+  height: 387px;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  margin-left: calc((50 / 1100) * 100%);
+}
+
+.middle-contents__about-whitebox--title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.middle-contents__about-whitebox--description {
+  max-width: 530px;
+  font-size: 16px;
+  line-height: calc(32em / 16);
+  letter-spacing: 0;
+}
+
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+.first-view__message--upper-text, .first-view__message--middle-text {
+  font-size: 20px;
+}
+
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+  margin-left: 30px;
+}
+
+.middle-contents-margin-top {
+  margin-top: 220px;
+}
+
+.works-culture-margin-top {
+  margin-top: 80px !important;
+}
+
+.works-culture {
+  position: relative;
+}
+
+.works-culture__background {
+  background-color: #f0f0f0;
+  width: 1440px;
+  height: 770px;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -180px;
+}
+
+.works-culture__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.works-culture__boxes .works-culture__boxes--left, .works-culture__boxes .works-culture__boxes--right {
+  width: 520px;
+  height: 531px;
+  border: 1px solid #000;
 }
 /*# sourceMappingURL=style.css.map */

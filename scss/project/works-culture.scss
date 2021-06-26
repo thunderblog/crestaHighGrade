@@ -1,0 +1,43 @@
+@import "../setting/color";
+@import "../setting/size";
+@import "../setting/typography";
+@import "../layout/layout.scss";
+
+.works-culture{
+	position: relative;
+
+	&__background{
+		background-color: $works-culture-background-color;
+		width: $works-culture-background-width;
+		height: $works-culture-background-height;
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: $works-culture-positon-top - $works-culture-margin-top;
+	}
+
+	&__boxes{
+
+		display: flex;
+		justify-content: space-between;
+		width: $works-culture-boxes-width;
+		margin: 0 auto;
+
+		%__boxes-common{
+			width: 520px;
+			height: 531px;
+			border: 1px solid $color-black;
+		}
+	
+		&--left{
+			@extend %__boxes-common;
+		}
+
+		&--right{
+			@extend %__boxes-common;
+		}
+	}
+
+}

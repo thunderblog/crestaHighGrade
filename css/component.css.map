@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;gBAEgB;AAIhB;;eAEe;AAIf;;cAEc;AAId;;aAEa;ACpBb;;gBAEgB;AAKhB;;gBAEgB;AAWhB;;qBAEqB;AAUrB;;qBAEqB;AC5BrB;;YAEY;AAMZ;;YAEY;AHVZ,AAAA,qBAAqB,CAAA;EACpB,KAAK,EEHuB,KAAK;EFIjC,MAAM,EEHuB,IAAI;EFIjC,gBAAgB,ECNH,IAAI;EDOjB,KAAK,ECNQ,IAAI;EDOjB,SAAS,EGDgB,IAAI;EHE7B,WAAW,EGDgB,IAAI;EHE/B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,OAAO;CACf",
+    "sources": [
+        "../scss/component/component.scss",
+        "../scss/setting/_color.scss",
+        "../scss/setting/_size.scss",
+        "../scss/setting/_typography.scss"
+    ],
+    "names": [],
+    "file": "component.css"
+}

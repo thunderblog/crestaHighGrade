@@ -13,15 +13,24 @@
 		background-position: center 0;
 
 		width: $ifrst-view-image-width;
-		height: 640px;
+		height: $first-view-image-height;
 		background-color: $color-black;
-		opacity: 0.8;
-		z-index: 3;
+
+		&::after{
+			content: '';
+			background-color: $first-view-image-after-color;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			height: $first-view-image-height;
+		}
 	}
 
 	&__right-box{
-		width: 780px;
-		height: 740px;
+		width: $first-view-right-box-width;
+		height: $first-view-right-box-height;
 		background-color: $color-black;
 		position: absolute;
 		right: 0;
@@ -32,15 +41,22 @@
 	&__message{
 		position: absolute;
 
-		right: 5vw;
-		//right: 0;
+		right: $first-view-message-right-position;
 		top: $first-view-message-top-position;
 
 		color: $color-white;
 
 		&--upper-text{
 			@extend %__font-size-20px;
-			//color: red;
+		}
+
+		&--middle-text{
+			@extend %__font-size-20px;
+		}
+
+		&--bottom-text{
+			font-size: 72px;
+			line-height: calc(86em / 72);
 		}
 	}
 

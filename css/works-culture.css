@@ -1,0 +1,75 @@
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.margin-left-30px {
+  margin-left: 30px;
+}
+
+.middle-contents-margin-top {
+  margin-top: 220px;
+}
+
+.works-culture-margin-top {
+  margin-top: 80px !important;
+}
+
+.works-culture {
+  position: relative;
+}
+
+.works-culture__background {
+  background-color: #f0f0f0;
+  width: 1440px;
+  height: 770px;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -180px;
+}
+
+.works-culture__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.works-culture__boxes .works-culture__boxes--left, .works-culture__boxes .works-culture__boxes--right {
+  width: 520px;
+  height: 531px;
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=works-culture.css.map */

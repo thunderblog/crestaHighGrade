@@ -1,7 +1,40 @@
+/***************
+component
+***************/
+
+$button-common-design-width: 160px;
+$button-common-design-height: 36px;
+
 /****************
 first-view
 ***************/
 $first-view-max-width: 1440px;
 $ifrst-view-image-width: 1100px;
+$first-view-image-height: 640px;
+
+$first-view-right-box-width:780px;
+$first-view-right-box-height:740px;
 
 $first-view-message-top-position: 10rem;
+$first-view-message-right-position: 10rem;
+
+/********************
+moddle-contents
+********************/
+
+$middle-contents-about-width:1100px;
+$middle-contents-about-height:607px;
+
+$middle-contents-about-whitebox-width:590px;
+$middle-contents-about-whitebox-height:387px;
+
+$middle-contents-about-whitebox-description-max-width: 530px;
+
+/********************
+$works-culture
+********************/
+
+$works-culture-background-width:1440px;
+$works-culture-background-height:770px;
+
+$works-culture-boxes-width: 1100px;

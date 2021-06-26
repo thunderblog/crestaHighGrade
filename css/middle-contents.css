@@ -1,0 +1,130 @@
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+  margin-left: 30px;
+}
+
+.middle-contents-margin-top {
+  margin-top: 220px;
+}
+
+.works-culture-margin-top {
+  margin-top: 80px !important;
+}
+
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.button-common-design, .middle-contents__about-whitebox--button {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.middle-contents {
+  position: relative;
+}
+
+.middle-contents__about {
+  width: 1100px;
+  height: 607px;
+  margin: 0 auto;
+  background-image: url(/img/about-img.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle-contents__about-whitebox {
+  background-color: #fff;
+  width: 590px;
+  height: 387px;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  margin-left: calc((50 / 1100) * 100%);
+}
+
+.middle-contents__about-whitebox--title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.middle-contents__about-whitebox--description {
+  max-width: 530px;
+  font-size: 16px;
+  line-height: calc(32em / 16);
+  letter-spacing: 0;
+}
+/*# sourceMappingURL=middle-contents.css.map */

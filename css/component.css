@@ -1,0 +1,49 @@
+/**************
+common
+***************/
+/*************
+first-view
+**************/
+/*************
+middle-contents
+*************/
+/*************
+works-culture
+************/
+/***************
+component
+***************/
+/****************
+first-view
+***************/
+/********************
+moddle-contents
+********************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.button-common-design {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=component.css.map */
