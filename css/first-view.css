@@ -1,24 +1,6 @@
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -33,29 +15,30 @@ button-common-design
 middle-contents
 ***********/
 .first-view {
+  width: 1440px;
   max-width: 1440px;
   position: relative;
   margin: 0 auto;
 }
 
 .first-view__image {
+  width: 1100px;
+  height: 640px;
   background-image: url(/img/header__image.png);
   background-repeat: no-repeat;
   background-position: center 0;
-  width: 1100px;
-  height: 640px;
-  background-color: #000;
 }
 
 .first-view__image::after {
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
+  width: 1100px;
+  height: 640px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  height: 640px;
 }
 
 .first-view__right-box {
@@ -70,6 +53,7 @@ middle-contents
 
 .first-view__message {
   position: absolute;
+  width: 292px;
   right: 10rem;
   top: 10rem;
   color: #fff;

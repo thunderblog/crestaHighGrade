@@ -1,24 +1,6 @@
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -28,6 +10,16 @@ button-common-design
 /***********
 middle-contents
 ***********/
+/************
+common
+************/
+.works-culture__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .margin-left-30px {
   margin-left: 30px;
 }
@@ -48,12 +40,8 @@ middle-contents
   background-color: #f0f0f0;
   width: 1440px;
   height: 770px;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
   top: -180px;
+  z-index: -1;
 }
 
 .works-culture__boxes {
@@ -70,6 +58,21 @@ middle-contents
 .works-culture__boxes .works-culture__boxes--left, .works-culture__boxes .works-culture__boxes--right {
   width: 520px;
   height: 531px;
-  border: 1px solid #000;
+}
+
+.works-culture__boxes--left__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.works-culture__boxes--left__image {
+  background-image: url(/img/works.png);
+  width: 520px;
+  height: 350px;
+}
+
+.works-culture__boxes--right__title {
+  font-size: 32px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=works-culture.css.map */

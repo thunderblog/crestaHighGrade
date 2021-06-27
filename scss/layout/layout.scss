@@ -1,9 +1,25 @@
+/************
+common
+************/
+
+$zIndex: (
+	rayerM1: -1,
+	rayerGrand: 0,
+	rayerP1: 1,
+);
 
 $middle-contents-margin-top: 220px;
 
 $works-culture-margin-top :80px;
 
 $works-culture-positon-top: -100px;
+
+%__absolute-LR-center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
 
 .margin-left-30px{
 	margin-left: 30px;

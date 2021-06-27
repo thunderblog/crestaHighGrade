@@ -2,20 +2,18 @@
 @import "../setting/size";
 @import "../setting/typography";
 @import "../layout/layout.scss";
+@import "../function/function.scss";
 
 .works-culture{
 	position: relative;
 
 	&__background{
-		background-color: $works-culture-background-color;
+		@extend %__absolute-LR-center;
+		background-color: GetColor(worksCultureBackGround);
 		width: $works-culture-background-width;
 		height: $works-culture-background-height;
-		z-index: -1;
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: auto;
-		top: $works-culture-positon-top - $works-culture-margin-top;
+		top: ($works-culture-positon-top - $works-culture-margin-top);
+		z-index: map-get($map: $zIndex, $key: rayerM1);
 	}
 
 	&__boxes{
@@ -26,17 +24,32 @@
 		margin: 0 auto;
 
 		%__boxes-common{
-			width: 520px;
-			height: 531px;
-			border: 1px solid $color-black;
+			width: GetSize(worksCulture,commonBoxesWidth);
+			height: GetSize(worksCulture,commonBoxesHeight);
 		}
 	
 		&--left{
 			@extend %__boxes-common;
+
+			&__title{
+				font-size: 32px;
+				font-weight: bold;
+			}
+
+			&__image{
+				background-image: url(/img/works.png);
+				width: 520px;
+				height: 350px;
+			}
 		}
 
 		&--right{
 			@extend %__boxes-common;
+
+			&__title{
+				font-size: 32px;
+				font-weight: bold;
+			}
 		}
 	}
 

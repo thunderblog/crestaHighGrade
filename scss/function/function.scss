@@ -1,3 +1,15 @@
-@function Divide($numerator,$denominator){
-	@return round($numerator/$denominator);
+@import "../setting/color";
+@import "../setting/position";
+
+@function GetColor($key) {
+	@return map-get($map: $Color, $key: $key);
+}
+
+@function GetPosition($key,$block:top) {
+	@return map-get(map-get($Position, $key), $block);
+}
+
+
+@function GetSize($key,$block:width) {
+	@return map-get(map-get($Size,$key) , $block);
 }

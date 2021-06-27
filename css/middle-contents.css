@@ -1,33 +1,18 @@
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /**********
 button-common-design
 ***********/
 /***********
 middle-contents
 ***********/
+/************
+common
+************/
 .margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
   margin-left: 30px;
 }
@@ -40,27 +25,9 @@ middle-contents
   margin-top: 80px !important;
 }
 
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -112,7 +79,7 @@ middle-contents
   height: 387px;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: GetSiteColor(aboutUsBackGroundOpacity);
   margin-left: calc((50 / 1100) * 100%);
 }
 

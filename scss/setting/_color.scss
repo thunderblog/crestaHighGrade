@@ -1,22 +1,7 @@
-/**************
-common
-***************/
-$color-black: #000;
-$color-white: #fff;
-
-/*************
-first-view
-**************/
-
-$first-view-image-after-color: rgba(0, 0, 0, 0.3);
-
-/*************
-middle-contents
-*************/
-
-$middle-contents-about-whitebox-opacity: 0.9;
-
-/*************
-works-culture
-************/
-$works-culture-background-color:#f0f0f0;
+$Color: (
+	black: #000,
+	white: #fff,
+	worksCultureBackGround: #f0f0f0,
+	firstViewOverLay: rgba(0, 0, 0, 0.3),
+	aboutUsBackGroundOpacity: 0.9,
+);

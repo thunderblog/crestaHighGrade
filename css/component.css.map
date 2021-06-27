@@ -1,11 +1,14 @@
 {
     "version": 3,
-    "mappings": "ACAA;;gBAEgB;AAIhB;;eAEe;AAIf;;cAEc;AAId;;aAEa;ACpBb;;gBAEgB;AAKhB;;gBAEgB;AAWhB;;qBAEqB;AAUrB;;qBAEqB;AC5BrB;;YAEY;AAMZ;;YAEY;AHVZ,AAAA,qBAAqB,CAAA;EACpB,KAAK,EEHuB,KAAK;EFIjC,MAAM,EEHuB,IAAI;EFIjC,gBAAgB,ECNH,IAAI;EDOjB,KAAK,ECNQ,IAAI;EDOjB,SAAS,EGDgB,IAAI;EHE7B,WAAW,EGDgB,IAAI;EHE/B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,OAAO;CACf",
+    "mappings": "AEAA;;gBAEgB;AAiDhB;;qBAEqB;AC/CrB;;YAEY;AAMZ;;YAEY;AHTZ,AAAA,qBAAqB,CAAA;EACpB,KAAK,EEFG,KAAK;EFGb,MAAM,EEFG,IAAI;EFIb,gBAAgB,ECVT,IAAI;EDWX,KAAK,ECVE,IAAI;EDWX,SAAS,EGHgB,IAAI;EHI7B,WAAW,EGHgB,IAAI;EHI/B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,OAAO;CACf",
     "sources": [
         "../scss/component/component.scss",
         "../scss/setting/_color.scss",
         "../scss/setting/_size.scss",
-        "../scss/setting/_typography.scss"
+        "../scss/setting/_typography.scss",
+        "../scss/function/function.scss",
+        "../scss/setting/_color.scss",
+        "../scss/setting/_position.scss"
     ],
     "names": [],
     "file": "component.css"

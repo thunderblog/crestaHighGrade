@@ -1,27 +1,35 @@
-@import url(../setting/_size.scss);
+@import "../setting/color";
+@import "../setting/position";
+@import "../setting/size";
+@import "../setting/typography";
+@import "../function/function.scss";
 
 .header{
-	max-width: 1440px;
-	width: 1440px;
-	// height: 640px;
+	width: GetSize(header,width);
+	max-width: GetSize(header,maxWidth);
+	background-color: GetColor(black);
 	position: relative;
-	background-color: #000;
+	top: GetPosition(header,top);
 	margin: 0 auto;
+	display: flex;
 
 	&__main-title{
-		width: 260px;
-		height: 58px;
+		display: flex;
+		margin: 0;
+
+		position: absolute;
+		top: GetPosition(header,mainTitleTop);
+		left: GetPosition(header,mainTitleLeft);
+
 		z-index: 1;
 
 		background-image: url(/img/site-logo.png);
 		background-repeat: no-repeat;
 
-		position: absolute;
-		top: 30px;
-		left: 4vw;
-
 		&--anker{
-			height: 200px;
+			width: GetSize(header,mainTitleWidth);
+			height: GetSize(header,mainTitleHeight);
+			cursor: pointer;
 		}
 	}
 	&__nav{

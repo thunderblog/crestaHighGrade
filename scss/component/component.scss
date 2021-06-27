@@ -1,14 +1,16 @@
 @import "../setting/color";
 @import "../setting/size";
 @import "../setting/typography";
+@import "../function/function.scss";
 
 
 
 .button-common-design{
-	width: $button-common-design-width;
-	height: $button-common-design-height;
-	background-color: $color-black;
-	color: $color-white;
+	width: GetSize(commonButton,width);
+	height: GetSize(commonButton,height);
+	//background-color: map-get($map: $site-color, $key: black);
+	background-color: GetColor(black);
+	color: GetColor(white);
 	font-size: $button-common-font-size;
 	font-weight: $button-common-font-weight;
 	display: flex;

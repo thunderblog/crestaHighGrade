@@ -1,37 +1,40 @@
 @import "../setting/color";
 @import "../setting/size";
 @import "../setting/typography";
+@import "../setting/position";
+@import "../function/function.scss";
 
 .first-view{
-	max-width: $first-view-max-width;
+	width: GetSize(firstView,width);
+	max-width: GetSize(firstView,maxWidth);
 	position: relative;
 	margin: 0 auto;
 
 	&__image{
+		width: GetSize(firstView,imageWidth);
+		height: GetSize(firstView,imageHeight);
 		background-image: url(/img/header__image.png);
 		background-repeat: no-repeat;
 		background-position: center 0;
 
-		width: $ifrst-view-image-width;
-		height: $first-view-image-height;
-		background-color: $color-black;
 
 		&::after{
 			content: '';
-			background-color: $first-view-image-after-color;
+			background-color: GetColor(firstViewOverLay);
+			width: GetSize(firstView,imageWidth);
+			height: GetSize(firstView,imageHeight);	
 			position: absolute;
 			left: 0;
 			right: 0;
 			top: 0;
 			bottom: 0;
-			height: $first-view-image-height;
 		}
 	}
 
 	&__right-box{
-		width: $first-view-right-box-width;
-		height: $first-view-right-box-height;
-		background-color: $color-black;
+		width: GetSize(firstView,rightBoxWidth);
+		height: GetSize(firstView,rightGBoxHeight);
+		background-color: GetColor(black);
 		position: absolute;
 		right: 0;
 		top:0;
@@ -40,11 +43,12 @@
 
 	&__message{
 		position: absolute;
+		width: GetSize(firstView,messageWidth);
 
-		right: $first-view-message-right-position;
-		top: $first-view-message-top-position;
+		right: GetPosition(firstView,right);
+		top: GetPosition(firstView,top);
 
-		color: $color-white;
+		color: GetColor(white);
 
 		&--upper-text{
 			@extend %__font-size-20px;

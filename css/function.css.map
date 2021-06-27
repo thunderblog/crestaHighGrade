@@ -2,7 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/function/function.scss"
+        "../scss/function/function.scss",
+        "../scss/setting/_color.scss",
+        "../scss/setting/_position.scss"
     ],
     "names": [],
     "file": "function.css"

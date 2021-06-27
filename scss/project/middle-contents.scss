@@ -3,6 +3,7 @@
 @import "../setting/typography";
 @import "../layout/layout.scss";
 @import "../component/component.scss";
+@import "../function/function.scss";
 
 .middle-contents{
 
@@ -17,12 +18,12 @@
 		align-items: center;
 
 		&-whitebox{
-			background-color: $color-white;
+			background-color: GetColor(white);
 			width: $middle-contents-about-whitebox-width;
 			height: $middle-contents-about-whitebox-height;
 			top: 0;
 			left: 0;
-			opacity: $middle-contents-about-whitebox-opacity;
+			opacity: GetSiteColor(aboutUsBackGroundOpacity);
 			margin-left: calc((50 / 1100) * 100%);
 
 

@@ -1,5 +1,14 @@
 @import url(c:\Users\user\Documents\crestaHighGrade\css\destyle.css);
-@import url(../setting/_size.scss);
+/************
+common
+************/
+.works-culture__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
   margin-left: 30px;
 }
@@ -16,54 +25,60 @@ body {
   margin: 0;
 }
 
+/***************
+component
+***************/
+/********************
+$works-culture
+********************/
+.first-view__message--upper-text, .first-view__message--middle-text {
+  font-size: 20px;
+}
+
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
 .header {
-  max-width: 1440px;
   width: 1440px;
-  position: relative;
+  max-width: 1440px;
   background-color: #000;
+  position: relative;
+  top: 0;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__main-title {
-  width: 260px;
-  height: 58px;
-  z-index: 1;
-  background-image: url(/img/site-logo.png);
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
   position: absolute;
   top: 30px;
   left: 4vw;
+  z-index: 1;
+  background-image: url(/img/site-logo.png);
+  background-repeat: no-repeat;
 }
 
 .header__main-title--anker {
-  height: 200px;
+  width: 260px;
+  height: 29px;
+  cursor: pointer;
 }
 
 .header__nav {
   display: none;
 }
 
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -78,29 +93,30 @@ button-common-design
 middle-contents
 ***********/
 .first-view {
+  width: 1440px;
   max-width: 1440px;
   position: relative;
   margin: 0 auto;
 }
 
 .first-view__image {
+  width: 1100px;
+  height: 640px;
   background-image: url(/img/header__image.png);
   background-repeat: no-repeat;
   background-position: center 0;
-  width: 1100px;
-  height: 640px;
-  background-color: #000;
 }
 
 .first-view__image::after {
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
+  width: 1100px;
+  height: 640px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  height: 640px;
 }
 
 .first-view__right-box {
@@ -115,6 +131,7 @@ middle-contents
 
 .first-view__message {
   position: absolute;
+  width: 292px;
   right: 10rem;
   top: 10rem;
   color: #fff;
@@ -128,27 +145,9 @@ middle-contents
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 .first-view__message--upper-text, .first-view__message--middle-text {
   font-size: 20px;
 }
@@ -159,6 +158,16 @@ button-common-design
 /***********
 middle-contents
 ***********/
+/************
+common
+************/
+.works-culture__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
   margin-left: 30px;
 }
@@ -171,27 +180,9 @@ middle-contents
   margin-top: 80px !important;
 }
 
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -247,7 +238,7 @@ middle-contents
   height: 387px;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: GetSiteColor(aboutUsBackGroundOpacity);
   margin-left: calc((50 / 1100) * 100%);
 }
 
@@ -263,27 +254,9 @@ middle-contents
   letter-spacing: 0;
 }
 
-/**************
-common
-***************/
-/*************
-first-view
-**************/
-/*************
-middle-contents
-*************/
-/*************
-works-culture
-************/
 /***************
 component
 ***************/
-/****************
-first-view
-***************/
-/********************
-moddle-contents
-********************/
 /********************
 $works-culture
 ********************/
@@ -297,6 +270,16 @@ button-common-design
 /***********
 middle-contents
 ***********/
+/************
+common
+************/
+.works-culture__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
   margin-left: 30px;
 }
@@ -317,12 +300,8 @@ middle-contents
   background-color: #f0f0f0;
   width: 1440px;
   height: 770px;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
   top: -180px;
+  z-index: -1;
 }
 
 .works-culture__boxes {
@@ -339,6 +318,21 @@ middle-contents
 .works-culture__boxes .works-culture__boxes--left, .works-culture__boxes .works-culture__boxes--right {
   width: 520px;
   height: 531px;
-  border: 1px solid #000;
+}
+
+.works-culture__boxes--left__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.works-culture__boxes--left__image {
+  background-image: url(/img/works.png);
+  width: 520px;
+  height: 350px;
+}
+
+.works-culture__boxes--right__title {
+  font-size: 32px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
