@@ -14,6 +14,8 @@ $works-culture-margin-top :80px;
 
 $works-culture-positon-top: -100px;
 
+$latest-topics_margin-top: 120px;
+
 %__absolute-LR-center{
 	position: absolute;
 	left: 0;
@@ -26,9 +28,13 @@ $works-culture-positon-top: -100px;
 }
 
 .middle-contents-margin-top{
-	margin-top: $middle-contents-margin-top;
+	margin-top: $middle-contents-margin-top !important;
 }
 
 .works-culture-margin-top{
 	margin-top: $works-culture-margin-top !important;
+}
+
+.latest-topics-margin-top{
+	margin-top: $latest-topics_margin-top !important;
 }

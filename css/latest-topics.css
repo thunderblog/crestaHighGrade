@@ -1,0 +1,76 @@
+/***************
+component
+***************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+/***************
+component
+***************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.button-common-design, .latest-topics__button {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.latest-topics {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.latest-topics__title {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.latest-topics__topic-box {
+  width: 700px;
+  margin: 0 0 0 auto;
+}
+
+.latest-topics__topic-box dt {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #cecece;
+  letter-spacing: calc(15em / 1000);
+  line-height: calc(32 / 10);
+}
+
+.latest-topics__topic-box dd {
+  font-size: 14px;
+}
+
+.latest-topics__button {
+  margin: 0 0 0 auto;
+}
+/*# sourceMappingURL=latest-topics.css.map */

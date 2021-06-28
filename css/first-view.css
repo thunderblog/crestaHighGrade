@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***************
 component
 ***************/
@@ -59,8 +60,18 @@ middle-contents
   color: #fff;
 }
 
+.first-view__message--upper-text {
+  font-family: "游ゴシック体", YuGothic;
+}
+
+.first-view__message--middle-text {
+  font-family: "Montserrat", sans-serif;
+}
+
 .first-view__message--bottom-text {
   font-size: 72px;
   line-height: calc(86em / 72);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 /*# sourceMappingURL=first-view.css.map */

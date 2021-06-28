@@ -52,15 +52,19 @@
 
 		&--upper-text{
 			@extend %__font-size-20px;
+			font-family: $fontFamilyYuGochic;
 		}
 
 		&--middle-text{
 			@extend %__font-size-20px;
+			font-family: $MontserratFontFamily;
 		}
 
 		&--bottom-text{
 			font-size: 72px;
 			line-height: calc(86em / 72);
+			font-family: $MontserratFontFamily;
+			font-weight: 800;
 		}
 	}
 

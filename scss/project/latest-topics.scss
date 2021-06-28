@@ -1,0 +1,42 @@
+@import "../setting/color";
+@import "../setting/position";
+@import "../setting/size";
+@import "../setting/typography";
+@import "../function/function.scss";
+@import "../component/component.scss";
+
+
+.latest-topics{
+	width: 1100px;
+	margin: 0 auto;
+
+	&__title{
+		font-size: 32px;
+		font-family: $MontserratFontFamily;
+		font-weight: bold;
+	}
+
+	&__topic-box{
+		width: 700px;
+		margin: 0 0 0 auto;
+
+		dt{
+			font-size: 10px;
+			font-weight: bold;
+			font-family: $MontserratFontFamily;
+			color: #cecece;
+			letter-spacing: calc(15em / 1000);
+			line-height: calc(32 / 10);
+		}
+
+		dd {
+			font-size: 14px;
+		}
+	}
+
+	&__button{
+		@extend .button-common-design;
+		margin: 0 0 0 auto;
+
+	}
+}
