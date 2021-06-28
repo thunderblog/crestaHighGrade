@@ -18,11 +18,15 @@ common
 }
 
 .middle-contents-margin-top {
-  margin-top: 220px;
+  margin-top: 220px !important;
 }
 
 .works-culture-margin-top {
   margin-top: 80px !important;
+}
+
+.latest-topics-margin-top {
+  margin-top: 120px !important;
 }
 
 /***************

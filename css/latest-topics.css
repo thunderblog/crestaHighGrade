@@ -68,9 +68,12 @@ middle-contents
 
 .latest-topics__topic-box dd {
   font-size: 14px;
+  margin-top: 9px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .latest-topics__button {
-  margin: 0 0 0 auto;
+  margin: 30px 0 0 auto;
 }
 /*# sourceMappingURL=latest-topics.css.map */
