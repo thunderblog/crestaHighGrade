@@ -1,0 +1,85 @@
+/***************
+component
+***************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+/***************
+component
+***************/
+/********************
+$works-culture
+********************/
+/**********
+button-common-design
+***********/
+/***********
+middle-contents
+***********/
+.button-common-design, .contact__message-box-button {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.contact {
+  width: 1440px;
+  height: 570px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.contact__message-box {
+  width: 440px;
+  padding-top: 72px;
+  margin-right: 80px;
+}
+
+.contact__message-box > div {
+  margin-bottom: 30px;
+}
+
+.contact__message-box-title {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.contact__message-box-description {
+  font-size: 16px;
+  line-height: calc(32/16);
+}
+
+.contact__image {
+  background-image: url(/img/contact.png);
+  width: 580px;
+  height: 390px;
+  margin-top: 60px;
+}
+/*# sourceMappingURL=contact.css.map */

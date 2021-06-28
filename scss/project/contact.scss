@@ -1,0 +1,50 @@
+@import "../setting/color";
+@import "../setting/position";
+@import "../setting/size";
+@import "../setting/typography";
+@import "../function/function.scss";
+@import "../component/component.scss";
+
+.contact{
+	width: 1440px;
+	height: 570px;
+	background-color: #F2F2F2;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+
+	&__message-box{
+		width: 440px;
+		padding-top: 72px;
+		margin-right: 80px;
+
+		>div{
+			margin-bottom: 30px;
+		}
+
+
+		&-title{
+			font-size: 32px;
+			font-family: $MontserratFontFamily;
+			font-weight: bold;
+		}
+
+		&-description{
+			font-size: 16px;
+			line-height: calc(32/16);
+
+		}
+
+		&-button{
+			@extend .button-common-design;
+		}
+	}
+
+	&__image{
+		background-image: url(/img/contact.png);
+		width: 580px;
+		height: 390px;
+		margin-top: 60px;
+	}
+}
