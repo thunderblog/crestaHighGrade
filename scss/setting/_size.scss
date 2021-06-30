@@ -13,6 +13,7 @@ $Size: (
 		maxWidth: 1440px,
 		mainTitleWidth: 260px,
 		mainTitleHeight: 29px,
+		tabletMaxWidth: 768px,
 	),
 
 	firstView:(
@@ -25,6 +26,10 @@ $Size: (
 		messageWidth: 292px,
 		messageTopPosition: 10rem,
 		messageRightPosition: 10rem,
+		tabletWidth:768px,
+		tabletImageWidth: 600px,
+		tableImageHeight: 890px,
+		tabletRightBoxHeight:1024px,
 	),
 
 	middleContents:(

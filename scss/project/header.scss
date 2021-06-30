@@ -42,3 +42,13 @@
 
 	}
 }
+
+
+@media screen and (max-width:768px){
+
+	.header{
+		max-width: GetSize(header,tabletMaxWidth);
+	}
+
+
+}

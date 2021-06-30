@@ -44,4 +44,10 @@ middle-contents
 .header__nav {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

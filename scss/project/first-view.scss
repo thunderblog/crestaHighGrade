@@ -69,3 +69,32 @@
 	}
 
 }
+
+
+@media screen and (max-width:768px){
+	.first-view{
+		width: GetSize(firstView,tabletWidth);
+
+		&__image{
+			width: GetSize(firstView,tabletImageWidth);
+			height: GetSize(firstView,tableImageHeight);
+			background-size: cover;
+
+			&::after{
+				content: '';
+				background-color: GetColor(firstViewOverLay);
+				width: GetSize(firstView,tabletImageWidth);
+				height: GetSize(firstView,tableImageHeight);	
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+
+		&__right-box{
+			height: GetSize(firstView,tabletRightBoxHeight);
+		}
+	}
+}
