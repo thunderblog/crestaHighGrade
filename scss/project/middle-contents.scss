@@ -8,14 +8,14 @@
 .middle-contents{
 
 	position: relative;
+	width: GetSize(middleContents,width);
+	height: GetSize(middleContents,height);
+	background-image: url(/img/about-img.png);
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
 
 	&__about{
-		width: $middle-contents-about-width;
-		height: $middle-contents-about-height;
-		margin: 0 auto;
-		background-image: url(/img/about-img.png);
-		display: flex;
-		align-items: center;
 
 		&-whitebox{
 			background-color: GetColor(white);
@@ -51,5 +51,10 @@
 		// end of whitebox
 	}
 	// end of about
+}
 
+@media screen and (max-width:768px){
+	.middle-contents{
+		width: GetSize(middleContents,tableWidth);
+	}
 }

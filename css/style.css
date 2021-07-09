@@ -276,16 +276,13 @@ middle-contents
 
 .middle-contents {
   position: relative;
-}
-
-.middle-contents__about {
   width: 1100px;
   height: 607px;
-  margin: 0 auto;
   background-image: url(/img/about-img.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -312,6 +309,12 @@ middle-contents
   font-size: 16px;
   line-height: calc(32em / 16);
   letter-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .middle-contents {
+    width: 768px;
+  }
 }
 
 /***************
