@@ -83,5 +83,35 @@
 			}
 		}
 	}
+}
 
+
+@media screen and (max-width:768px){
+	.works-culture{
+		width: 768px;
+
+		&__boxes{
+			flex-direction: column;
+			padding-top: 60px;
+
+			>div{
+				margin-left: 30px;
+			}
+
+			&--right{
+				margin-top: 80px;
+			}
+
+		}
+
+		&__background{
+			width: 768px;
+			height: 1242px;
+			top: 0;
+		}
+	}
+
+	.works-culture-margin-top{
+		margin-top: 0 !important;
+	}
 }

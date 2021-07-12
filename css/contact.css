@@ -78,8 +78,9 @@ middle-contents
 
 .contact__image {
   background-image: url(../img/contact.png);
+  background-repeat: no-repeat;
   width: 580px;
   height: 390px;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 /*# sourceMappingURL=contact.css.map */

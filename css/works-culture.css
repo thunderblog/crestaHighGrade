@@ -21,7 +21,7 @@ common
 }
 
 .margin-left-30px {
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 
 .middle-contents-margin-top {
@@ -135,5 +135,32 @@ middle-contents
   font-size: 16px;
   letter-spacing: 0;
   line-height: calc(94rem / 16);
+}
+
+@media screen and (max-width: 768px) {
+  .works-culture {
+    width: 768px;
+  }
+  .works-culture__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 60px;
+  }
+  .works-culture__boxes > div {
+    margin-left: 30px;
+  }
+  .works-culture__boxes--right {
+    margin-top: 80px;
+  }
+  .works-culture__background {
+    width: 768px;
+    height: 1242px;
+    top: 0;
+  }
+  .works-culture-margin-top {
+    margin-top: 0 !important;
+  }
 }
 /*# sourceMappingURL=works-culture.css.map */

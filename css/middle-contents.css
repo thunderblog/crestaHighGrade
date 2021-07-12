@@ -89,6 +89,7 @@ middle-contents
 }
 
 .middle-contents__about-whitebox--title {
+  padding-top: 50px;
   font-size: 32px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
