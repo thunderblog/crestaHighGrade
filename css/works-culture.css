@@ -107,7 +107,7 @@ middle-contents
 }
 
 .works-culture__boxes--left__image {
-  background-image: url(../../img/works.png);
+  background-image: url(../img/works.png);
   width: 520px;
   height: 350px;
 }
@@ -126,7 +126,7 @@ middle-contents
 }
 
 .works-culture__boxes--right__image {
-  background-image: url(../../img/culture.png);
+  background-image: url(../img/culture.png);
   width: 520px;
   height: 350px;
 }
