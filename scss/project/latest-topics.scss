@@ -43,3 +43,20 @@
 
 	}
 }
+
+@media screen and (max-width:768px){
+	.latest-topics{
+		width: 768px;
+		padding-left: 30px;
+		box-sizing: border-box;
+
+		&__topic-box{
+			margin: 0;
+		}
+
+		&__button{
+			margin: 30px auto 0 0;
+		}
+	}
+
+}

@@ -33,6 +33,7 @@ middle-contents
   z-index: 1;
   background-image: url(../img/site-logo.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__main-title--anker {
@@ -48,6 +49,16 @@ middle-contents
 @media screen and (max-width: 768px) {
   .header {
     max-width: 768px;
+  }
+  .header__main-title--anker {
+    width: 189px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    max-width: 375px;
   }
 }
 /*# sourceMappingURL=header.css.map */

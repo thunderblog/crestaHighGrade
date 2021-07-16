@@ -41,10 +41,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -74,6 +70,7 @@ middle-contents
   z-index: 1;
   background-image: url(../img/site-logo.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__main-title--anker {
@@ -90,6 +87,16 @@ middle-contents
   .header {
     max-width: 768px;
   }
+  .header__main-title--anker {
+    width: 189px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    max-width: 375px;
+  }
 }
 
 /***************
@@ -98,10 +105,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -154,10 +157,12 @@ middle-contents
 }
 
 .first-view__message--upper-text {
+  font-size: 20px;
   font-family: "游ゴシック体", YuGothic;
 }
 
 .first-view__message--middle-text {
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -170,7 +175,7 @@ middle-contents
 
 @media screen and (max-width: 768px) {
   .first-view {
-    width: 768px;
+    max-width: 768px;
   }
   .first-view__image {
     width: 600px;
@@ -178,18 +183,60 @@ middle-contents
     background-size: cover;
   }
   .first-view__image::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.3);
     width: 600px;
     height: 890px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
   .first-view__right-box {
+    width: 562px;
     height: 1024px;
+  }
+  .first-view__message {
+    right: 1rem;
+  }
+  .first-view__message--upper-text {
+    font-size: 16px;
+    font-family: "游ゴシック体", YuGothic;
+  }
+  .first-view__message--middle-text {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .first-view__message--bottom-text {
+    font-size: 56px;
+    line-height: calc(56em / 53);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .first-view {
+    max-width: 375px;
+  }
+  .first-view__image {
+    width: 287px;
+    height: 580px;
+  }
+  .first-view__image::after {
+    width: 287px;
+    height: 580px;
+  }
+  .first-view__right-box {
+    width: 283px;
+    height: 667px;
+  }
+  .first-view__message {
+    right: 1rem;
+  }
+  .first-view__message--upper-text {
+    font-size: 16px;
+    font-family: "游ゴシック体", YuGothic;
+  }
+  .first-view__message--middle-text {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .first-view__message--bottom-text {
+    font-size: 56px;
+    line-height: calc(56em / 53);
   }
 }
 
@@ -199,10 +246,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -245,10 +288,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -324,10 +363,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -370,10 +405,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -475,6 +506,7 @@ middle-contents
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 60px;
+    width: 768px;
   }
   .works-culture__boxes > div {
     margin-left: 30px;
@@ -498,10 +530,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -514,10 +542,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -579,16 +603,27 @@ middle-contents
   margin: 30px 0 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .latest-topics {
+    width: 768px;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .latest-topics__topic-box {
+    margin: 0;
+  }
+  .latest-topics__button {
+    margin: 30px auto 0 0;
+  }
+}
+
 /***************
 component
 ***************/
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -601,10 +636,6 @@ component
 /********************
 $works-culture
 ********************/
-.first-view__message--upper-text, .first-view__message--middle-text {
-  font-size: 20px;
-}
-
 /**********
 button-common-design
 ***********/
@@ -673,6 +704,24 @@ middle-contents
   padding-top: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .contact__image {
+    z-index: 2;
+    width: 520px;
+    height: 350px;
+  }
+}
+
 .footer {
   width: 1440px;
   height: 50px;
@@ -688,5 +737,11 @@ middle-contents
   margin: 0 auto;
   background-color: #525252;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,9 @@ $Size: (
 		mainTitleWidth: 260px,
 		mainTitleHeight: 29px,
 		tabletMaxWidth: 768px,
+		tableTitleWidth: 189px,
+		tableTitleHeight: 21px,
+		spMaxWidth: 375px,
 	),
 
 	firstView:(
@@ -26,10 +29,17 @@ $Size: (
 		messageWidth: 292px,
 		messageTopPosition: 10rem,
 		messageRightPosition: 10rem,
-		tabletWidth:768px,
+		tabletMaxWidth:768px,
 		tabletImageWidth: 600px,
 		tableImageHeight: 890px,
+		tabletRightBoxWidth:562px,
 		tabletRightBoxHeight:1024px,
+		spMaxWidth:375px,
+		spImageWidth:287px,
+		spImageHeight:580px,
+		spRightBoxWidth:283px,
+		spRightBoxHeight: 667px,
+
 	),
 
 	middleContents:(

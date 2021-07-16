@@ -14,7 +14,7 @@ middle-contents
 common
 ************/
 .margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 
 .middle-contents-margin-top {

@@ -8,3 +8,9 @@
 	background-color: #525252;
 	color: white;
 }
+
+@media screen and (max-width:768px){
+	.footer{
+		width: 768px;
+	}
+}

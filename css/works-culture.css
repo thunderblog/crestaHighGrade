@@ -147,6 +147,7 @@ middle-contents
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 60px;
+    width: 768px;
   }
   .works-culture__boxes > div {
     margin-left: 30px;

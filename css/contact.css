@@ -83,4 +83,22 @@ middle-contents
   height: 390px;
   padding-top: 60px;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .contact__image {
+    z-index: 2;
+    width: 520px;
+    height: 350px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

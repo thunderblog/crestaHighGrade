@@ -25,6 +25,7 @@
 
 		background-image: url(../img/site-logo.png);
 		background-repeat: no-repeat;
+		background-size: cover;
 
 		&--anker{
 			width: GetSize(header,mainTitleWidth);
@@ -48,7 +49,18 @@
 
 	.header{
 		max-width: GetSize(header,tabletMaxWidth);
+
+		&__main-title--anker{
+			width: GetSize(header,tableTitleWidth);
+			height: GetSize(header,tableTitleHeight);
+		}
 	}
 
 
+}
+
+@media screen and (max-width:375px) {
+	.header{
+		max-width: GetSize(header,spMaxWidth);
+	}
 }

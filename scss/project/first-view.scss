@@ -45,18 +45,18 @@
 		position: absolute;
 		width: GetSize(firstView,messageWidth);
 
-		right: GetPosition(firstView,right);
+		right: GetPosition(firstView,pcMessageRight);
 		top: GetPosition(firstView,top);
 
 		color: GetColor(white);
 
 		&--upper-text{
-			@extend %__font-size-20px;
+			font-size: 20px;
 			font-family: $fontFamilyYuGochic;
 		}
 
 		&--middle-text{
-			@extend %__font-size-20px;
+			font-size: 20px;
 			font-family: $MontserratFontFamily;
 		}
 
@@ -73,7 +73,7 @@
 
 @media screen and (max-width:768px){
 	.first-view{
-		width: GetSize(firstView,tabletWidth);
+		max-width: GetSize(firstView,tabletMaxWidth);
 
 		&__image{
 			width: GetSize(firstView,tabletImageWidth);
@@ -81,20 +81,77 @@
 			background-size: cover;
 
 			&::after{
-				content: '';
-				background-color: GetColor(firstViewOverLay);
 				width: GetSize(firstView,tabletImageWidth);
 				height: GetSize(firstView,tableImageHeight);	
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
 			}
 		}
 
 		&__right-box{
+			width: GetSize(firstView,tabletRightBoxWidth);
 			height: GetSize(firstView,tabletRightBoxHeight);
 		}
+
+		&__message{
+
+			right: GetPosition(firstView,tableMessageRight);
+
+			&--upper-text{
+				font-size: 16px;
+				font-family: $fontFamilyYuGochic;
+			}
+	
+			&--middle-text{
+				font-size: 16px;
+				font-family: $MontserratFontFamily;
+			}
+	
+			&--bottom-text{
+				font-size: 56px;
+				line-height: calc(56em / 53);
+			}
+		}
 	}
+}
+
+@media screen and (max-width:375px) {
+	.first-view{
+		max-width: GetSize(firstView,spMaxWidth);
+
+		&__image{
+			width: GetSize(firstView,spImageWidth);
+			height: GetSize(firstView,spImageHeight);
+
+			&::after{
+				width: GetSize(firstView,spImageWidth);
+				height: GetSize(firstView,spImageHeight);
+			}
+		}
+
+		&__right-box{
+			width: GetSize(firstView,spRightBoxWidth);
+			height: GetSize(firstView,spRightBoxHeight);
+		}
+
+		&__message{
+
+			right: GetPosition(firstView,tableMessageRight);
+
+			&--upper-text{
+				font-size: 16px;
+				font-family: $fontFamilyYuGochic;
+			}
+	
+			&--middle-text{
+				font-size: 16px;
+				font-family: $MontserratFontFamily;
+			}
+	
+			&--bottom-text{
+				font-size: 56px;
+				line-height: calc(56em / 53);
+			}
+		}
+
+	}
+	
 }
