@@ -363,9 +363,9 @@ middle-contents
   }
   .middle-contents__about-whitebox {
     width: 345px;
-    margin: 0 auto;
   }
   .middle-contents__about-whitebox--description {
+    width: 300px;
     margin: 0;
     font-size: 14px;
     height: 211px;
@@ -523,9 +523,6 @@ middle-contents
     padding-top: 60px;
     max-width: 768px;
   }
-  .works-culture__boxes > div {
-    margin-left: 30px;
-  }
   .works-culture__boxes--right {
     margin-top: 80px;
   }
@@ -539,28 +536,33 @@ middle-contents
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   .works-culture {
     max-width: 375px;
   }
   .works-culture__background {
     width: 375px;
+    height: 1005px;
   }
   .works-culture__boxes {
     width: 345px;
   }
   .works-culture__boxes--left {
-    width: 345px;
+    width: 345px !important;
+    height: 441px !important;
+    margin: 0 5%;
   }
   .works-culture__boxes--left__image {
-    width: 345px;
+    width: 335px;
     height: 222px;
   }
   .works-culture__boxes--right {
-    width: 345px;
+    width: 345px !important;
+    height: 441px !important;
+    margin: 0 5%;
   }
   .works-culture__boxes--right__image {
-    width: 345px;
+    width: 335px;
     height: 222px;
   }
 }
@@ -656,6 +658,16 @@ middle-contents
   }
   .latest-topics__button {
     margin: 30px auto 0 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .latest-topics {
+    width: 375px;
+    padding-left: 5%;
+  }
+  .latest-topics__topic-box {
+    width: 345px;
   }
 }
 
@@ -763,6 +775,23 @@ middle-contents
   }
 }
 
+@media screen and (max-width: 375px) {
+  .contact {
+    width: 375px;
+    padding-left: 5%;
+  }
+  .contact__image {
+    width: 345px;
+    height: 232px;
+    background-size: cover;
+  }
+  .contact__message-box {
+    width: 345px;
+    padding: 0;
+    margin-top: 27px;
+  }
+}
+
 .footer {
   width: 1440px;
   height: 50px;
@@ -783,6 +812,12 @@ middle-contents
 @media screen and (max-width: 768px) {
   .footer {
     width: 768px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    width: 375px;
   }
 }
 /*# sourceMappingURL=style.css.map */

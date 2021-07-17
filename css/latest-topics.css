@@ -91,4 +91,14 @@ middle-contents
     margin: 30px auto 0 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .latest-topics {
+    width: 375px;
+    padding-left: 5%;
+  }
+  .latest-topics__topic-box {
+    width: 345px;
+  }
+}
 /*# sourceMappingURL=latest-topics.css.map */

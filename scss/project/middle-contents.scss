@@ -63,9 +63,9 @@
 		&__about {
 			&-whitebox {
 				width: 345px;
-				margin: 0 auto;
 
 				&--description {
+					width: 300px;
 					margin: 0;
 					font-size: 14px;
 					height: GetSize(middleContents, spWhiteBoxDescriptionHeight);

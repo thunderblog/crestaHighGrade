@@ -114,9 +114,9 @@ middle-contents
   }
   .middle-contents__about-whitebox {
     width: 345px;
-    margin: 0 auto;
   }
   .middle-contents__about-whitebox--description {
+    width: 300px;
     margin: 0;
     font-size: 14px;
     height: 211px;

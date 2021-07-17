@@ -20,4 +20,10 @@
     width: 768px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .footer {
+    width: 375px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

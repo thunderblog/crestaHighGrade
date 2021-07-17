@@ -149,9 +149,6 @@ middle-contents
     padding-top: 60px;
     max-width: 768px;
   }
-  .works-culture__boxes > div {
-    margin-left: 30px;
-  }
   .works-culture__boxes--right {
     margin-top: 80px;
   }
@@ -171,19 +168,24 @@ middle-contents
   }
   .works-culture__background {
     width: 375px;
+    height: 1005px;
   }
   .works-culture__boxes {
     width: 345px;
   }
   .works-culture__boxes--left {
     width: 345px !important;
+    height: 441px !important;
+    margin: 0 5%;
   }
   .works-culture__boxes--left__image {
     width: 335px;
     height: 222px;
   }
   .works-culture__boxes--right {
-    width: 345px;
+    width: 345px !important;
+    height: 441px !important;
+    margin: 0 5%;
   }
   .works-culture__boxes--right__image {
     width: 335px;
