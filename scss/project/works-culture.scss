@@ -86,12 +86,12 @@
 
 @media screen and (max-width: 768px) {
 	.works-culture {
-		width: 768px;
+		max-width: GetSize(worksCulture, tableWidth);
 
 		&__boxes {
 			flex-direction: column;
 			padding-top: 60px;
-			width: 768px;
+			max-width: GetSize(worksCulture, tableWidth);
 
 			> div {
 				margin-left: 30px;
@@ -103,13 +103,45 @@
 		}
 
 		&__background {
-			width: 768px;
-			height: 1242px;
+			width: GetSize(worksCulture, tableWidth);
+			height: GetSize(worksCulture, tableBackGroundHeight);
 			top: 0;
 		}
 	}
 
 	.works-culture-margin-top {
 		margin-top: 0 !important;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.works-culture {
+		max-width: GetSize(worksCulture, spWidth);
+
+		&__background {
+			width: GetSize(worksCulture, spWidth);
+		}
+
+		&__boxes {
+			width: 345px;
+
+			&--left {
+				width: 345px !important;
+
+				&__image {
+					width: 335px;
+					height: 222px;
+				}
+			}
+
+			&--right{
+				width: 345px;
+
+				&__image{
+					width: 335px;
+					height: 222px;
+				}
+			}
+		}
 	}
 }
