@@ -40,6 +40,8 @@
 
 			&__image {
 				background-image: url(../img/works.png);
+				background-size: contain;
+				background-repeat: no-repeat;
 				width: 520px;
 				height: 350px;
 			}
@@ -67,6 +69,8 @@
 
 			&__image {
 				background-image: url(../img/culture.png);
+				background-size: contain;
+				background-repeat: no-repeat;
 				width: 520px;
 				height: 350px;
 			}
@@ -92,8 +96,16 @@
 			flex-direction: column;
 			padding-top: 60px;
 			max-width: GetSize(worksCulture, tableWidth);
+			width: GetSize(worksCulture,tableWidth);
+
+			&--left{
+				margin: 0;
+				margin-left: 30px;
+			}
 
 			&--right {
+				margin: 0;
+				margin-left: 30px;
 				margin-top: 80px;
 			}
 		}
@@ -121,6 +133,7 @@
 
 		&__boxes {
 			width: 345px;
+			justify-content: center;
 
 			&--left {
 				width: 345px !important;

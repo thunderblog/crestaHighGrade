@@ -108,6 +108,8 @@ middle-contents
 
 .works-culture__boxes--left__image {
   background-image: url(../img/works.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 520px;
   height: 350px;
 }
@@ -127,6 +129,8 @@ middle-contents
 
 .works-culture__boxes--right__image {
   background-image: url(../img/culture.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 520px;
   height: 350px;
 }
@@ -148,8 +152,15 @@ middle-contents
             flex-direction: column;
     padding-top: 60px;
     max-width: 768px;
+    width: 768px;
+  }
+  .works-culture__boxes--left {
+    margin: 0;
+    margin-left: 30px;
   }
   .works-culture__boxes--right {
+    margin: 0;
+    margin-left: 30px;
     margin-top: 80px;
   }
   .works-culture__background {
@@ -172,6 +183,9 @@ middle-contents
   }
   .works-culture__boxes {
     width: 345px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .works-culture__boxes--left {
     width: 345px !important;

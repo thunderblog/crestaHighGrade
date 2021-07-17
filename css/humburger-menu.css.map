@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACd,OAAO,EAAE,IAAI;CACb",
+    "sources": [
+        "../scss/project/humburger-menu.scss"
+    ],
+    "names": [],
+    "file": "humburger-menu.css"
+}

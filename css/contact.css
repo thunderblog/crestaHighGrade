@@ -43,7 +43,7 @@ middle-contents
 
 .contact {
   width: 1440px;
-  height: 570px;
+  min-height: 570px;
   background-color: #f2f2f2;
   margin: 0 auto;
   display: -webkit-box;
@@ -52,13 +52,12 @@ middle-contents
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 60px;
 }
 
 .contact__message-box {
   width: 440px;
-  padding-top: 72px;
   margin-right: 80px;
+  margin-top: 60px;
 }
 
 .contact__message-box > div {
@@ -80,8 +79,7 @@ middle-contents
   background-image: url(../img/contact.png);
   background-repeat: no-repeat;
   width: 580px;
-  height: 390px;
-  padding-top: 60px;
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 768px) {
