@@ -5,10 +5,10 @@
 @import "../function/function.scss";
 @import "../component/component.scss";
 
-.works-culture{
+.works-culture {
 	position: relative;
 
-	&__background{
+	&__background {
 		@extend %__absolute-LR-center;
 		background-color: GetColor(worksCultureBackGround);
 		width: $works-culture-background-width;
@@ -17,102 +17,99 @@
 		z-index: map-get($map: $zIndex, $key: rayerM1);
 	}
 
-	&__boxes{
-
+	&__boxes {
 		display: flex;
 		justify-content: space-between;
 		width: $works-culture-boxes-width;
 		margin: 0 auto;
 
-		%__boxes-common{
-			width: GetSize(worksCulture,commonBoxesWidth);
-			height: GetSize(worksCulture,commonBoxesHeight);
+		%__boxes-common {
+			width: GetSize(worksCulture, commonBoxesWidth);
+			height: GetSize(worksCulture, commonBoxesHeight);
 		}
-	
-		&--left{
+
+		&--left {
 			@extend %__boxes-common;
 
-			&__title{
+			&__title {
 				font-size: 32px;
 				font-weight: bold;
 				margin-bottom: 30px;
 				font-family: $MontserratFontFamily;
 			}
 
-			&__image{
+			&__image {
 				background-image: url(../img/works.png);
 				width: 520px;
 				height: 350px;
 			}
 
-			&__description{
+			&__description {
 				font-size: 16px;
 				letter-spacing: 0;
 				line-height: calc(94rem / 16);
 			}
 
-			&__button{
+			&__button {
 				@extend .button-common-design;
 			}
 		}
-		
-		&--right{
+
+		&--right {
 			@extend %__boxes-common;
-			
-			&__title{
+
+			&__title {
 				font-size: 32px;
 				font-weight: bold;
 				margin-bottom: 30px;
 				font-family: $MontserratFontFamily;
 			}
-			
-			&__image{
+
+			&__image {
 				background-image: url(../img/culture.png);
 				width: 520px;
 				height: 350px;
 			}
 
-			&__description{
+			&__description {
 				font-size: 16px;
 				letter-spacing: 0;
 				line-height: calc(94rem / 16);
 			}
 
-			&__button{
+			&__button {
 				@extend .button-common-design;
 			}
 		}
 	}
 }
 
-
-@media screen and (max-width:768px){
-	.works-culture{
+@media screen and (max-width: 768px) {
+	.works-culture {
 		width: 768px;
 
-		&__boxes{
+		&__boxes {
 			flex-direction: column;
 			padding-top: 60px;
 			width: 768px;
 
-			>div{
+			> div {
 				margin-left: 30px;
 			}
 
-			&--right{
+			&--right {
 				margin-top: 80px;
 			}
-
 		}
 
-		&__background{
+		&__background {
 			width: 768px;
 			height: 1242px;
 			top: 0;
 		}
 	}
 
-	.works-culture-margin-top{
+	.works-culture-margin-top {
 		margin-top: 0 !important;
 	}
 }

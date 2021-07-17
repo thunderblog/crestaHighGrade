@@ -5,19 +5,17 @@
 @import "../component/component.scss";
 @import "../function/function.scss";
 
-.middle-contents{
-
+.middle-contents {
 	position: relative;
-	width: GetSize(middleContents,width);
-	height: GetSize(middleContents,height);
+	width: GetSize(middleContents, width);
+	height: GetSize(middleContents, height);
 	background-image: url(../img/about-img.png);
 	display: flex;
 	margin: 0 auto;
 	align-items: center;
 
-	&__about{
-
-		&-whitebox{
+	&__about {
+		&-whitebox {
 			background-color: GetColor(white);
 			width: $middle-contents-about-whitebox-width;
 			height: $middle-contents-about-whitebox-height;
@@ -26,8 +24,7 @@
 			opacity: GetSiteColor(aboutUsBackGroundOpacity);
 			margin-left: calc((50 / 1100) * 100%);
 
-
-			&--title{
+			&--title {
 				@extend .margin-left-30px;
 				padding-top: 50px;
 				font-size: $middle-contents-about-whitebox--title-font-size;
@@ -35,7 +32,7 @@
 				font-family: $MontserratFontFamily;
 			}
 
-			&--description{
+			&--description {
 				@extend .margin-left-30px;
 				max-width: $middle-contents-about-whitebox-description-max-width;
 				font-size: 16px;
@@ -43,10 +40,9 @@
 				letter-spacing: 0;
 			}
 
-			&--button{
+			&--button {
 				@extend .margin-left-30px;
 				@extend .button-common-design;
-
 			}
 		}
 		// end of whitebox
@@ -54,26 +50,25 @@
 	// end of about
 }
 
-@media screen and (max-width:768px){
-	.middle-contents{
-		max-width: GetSize(middleContents,tableWidth);
+@media screen and (max-width: 768px) {
+	.middle-contents {
+		max-width: GetSize(middleContents, tableWidth);
 	}
 }
 
-@media screen and (max-width:375px) {
-	.middle-contents{
-		max-width: GetSize(middleContents,spWidth);
+@media screen and (max-width: 375px) {
+	.middle-contents {
+		max-width: GetSize(middleContents, spWidth);
 
-		&__about{
-
-			&-whitebox{
+		&__about {
+			&-whitebox {
 				width: 345px;
 				margin: 0 auto;
 
-				&--description{
+				&--description {
 					margin: 0;
 					font-size: 14px;
-					height: GetSize(middleContents,spWhiteBoxDescriptionHeight);
+					height: GetSize(middleContents, spWhiteBoxDescriptionHeight);
 				}
 			}
 		}

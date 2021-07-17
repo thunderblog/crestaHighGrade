@@ -5,43 +5,41 @@
 @import "../function/function.scss";
 @import "../component/component.scss";
 
-.contact{
+.contact {
 	width: 1440px;
 	height: 570px;
-	background-color: #F2F2F2;
+	background-color: #f2f2f2;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	padding-top: 60px;
 
-	&__message-box{
+	&__message-box {
 		width: 440px;
 		padding-top: 72px;
 		margin-right: 80px;
 
-		>div{
+		> div {
 			margin-bottom: 30px;
 		}
 
-
-		&-title{
+		&-title {
 			font-size: 32px;
 			font-family: $MontserratFontFamily;
 			font-weight: bold;
 		}
 
-		&-description{
+		&-description {
 			font-size: 16px;
-			line-height: calc(32/16);
-
+			line-height: calc(32 / 16);
 		}
 
-		&-button{
+		&-button {
 			@extend .button-common-design;
 		}
 	}
 
-	&__image{
+	&__image {
 		background-image: url(../img/contact.png);
 		background-repeat: no-repeat;
 		width: 580px;
@@ -51,14 +49,14 @@
 	}
 }
 
-@media screen and (max-width:768px){
-	.contact{
+@media screen and (max-width: 768px) {
+	.contact {
 		width: 768px;
 		flex-direction: column-reverse;
 		padding-left: 30px;
 		box-sizing: border-box;
 
-		&__image{
+		&__image {
 			z-index: 2;
 			width: 520px;
 			height: 350px;

@@ -679,7 +679,7 @@ middle-contents
 .contact {
   width: 1440px;
   height: 570px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +708,7 @@ middle-contents
 
 .contact__message-box-description {
   font-size: 16px;
-  line-height: calc(32/16);
+  line-height: calc(32 / 16);
 }
 
 .contact__image {

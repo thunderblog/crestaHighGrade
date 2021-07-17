@@ -4,25 +4,24 @@
 @import "../setting/position";
 @import "../function/function.scss";
 
-.first-view{
-	width: GetSize(firstView,width);
-	max-width: GetSize(firstView,maxWidth);
+.first-view {
+	width: GetSize(firstView, width);
+	max-width: GetSize(firstView, maxWidth);
 	position: relative;
 	margin: 0 auto;
 
-	&__image{
-		width: GetSize(firstView,imageWidth);
-		height: GetSize(firstView,imageHeight);
+	&__image {
+		width: GetSize(firstView, imageWidth);
+		height: GetSize(firstView, imageHeight);
 		background-image: url(../img/header__image.png);
 		background-repeat: no-repeat;
 		background-position: center 0;
 
-
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			background-color: GetColor(firstViewOverLay);
-			width: GetSize(firstView,imageWidth);
-			height: GetSize(firstView,imageHeight);	
+			width: GetSize(firstView, imageWidth);
+			height: GetSize(firstView, imageHeight);
 			position: absolute;
 			left: 0;
 			right: 0;
@@ -31,81 +30,78 @@
 		}
 	}
 
-	&__right-box{
-		width: GetSize(firstView,rightBoxWidth);
-		height: GetSize(firstView,rightGBoxHeight);
+	&__right-box {
+		width: GetSize(firstView, rightBoxWidth);
+		height: GetSize(firstView, rightGBoxHeight);
 		background-color: GetColor(black);
 		position: absolute;
 		right: 0;
-		top:0;
+		top: 0;
 		z-index: -1;
 	}
 
-	&__message{
+	&__message {
 		position: absolute;
-		width: GetSize(firstView,messageWidth);
+		width: GetSize(firstView, messageWidth);
 
-		right: GetPosition(firstView,pcMessageRight);
-		top: GetPosition(firstView,top);
+		right: GetPosition(firstView, pcMessageRight);
+		top: GetPosition(firstView, top);
 
 		color: GetColor(white);
 
-		&--upper-text{
+		&--upper-text {
 			font-size: 20px;
 			font-family: $fontFamilyYuGochic;
 		}
 
-		&--middle-text{
+		&--middle-text {
 			font-size: 20px;
 			font-family: $MontserratFontFamily;
 		}
 
-		&--bottom-text{
+		&--bottom-text {
 			font-size: 72px;
 			line-height: calc(86em / 72);
 			font-family: $MontserratFontFamily;
 			font-weight: 800;
 		}
 	}
-
 }
 
+@media screen and (max-width: 768px) {
+	.first-view {
+		max-width: GetSize(firstView, tabletMaxWidth);
 
-@media screen and (max-width:768px){
-	.first-view{
-		max-width: GetSize(firstView,tabletMaxWidth);
-
-		&__image{
-			width: GetSize(firstView,tabletImageWidth);
-			height: GetSize(firstView,tableImageHeight);
+		&__image {
+			width: GetSize(firstView, tabletImageWidth);
+			height: GetSize(firstView, tableImageHeight);
 			background-size: cover;
 
-			&::after{
-				width: GetSize(firstView,tabletImageWidth);
-				height: GetSize(firstView,tableImageHeight);	
+			&::after {
+				width: GetSize(firstView, tabletImageWidth);
+				height: GetSize(firstView, tableImageHeight);
 			}
 		}
 
-		&__right-box{
-			width: GetSize(firstView,tabletRightBoxWidth);
-			height: GetSize(firstView,tabletRightBoxHeight);
+		&__right-box {
+			width: GetSize(firstView, tabletRightBoxWidth);
+			height: GetSize(firstView, tabletRightBoxHeight);
 		}
 
-		&__message{
+		&__message {
+			right: GetPosition(firstView, tableMessageRight);
 
-			right: GetPosition(firstView,tableMessageRight);
-
-			&--upper-text{
+			&--upper-text {
 				font-size: 16px;
 				font-family: $fontFamilyYuGochic;
 			}
-	
-			&--middle-text{
+
+			&--middle-text {
 				font-size: 16px;
 				font-family: $MontserratFontFamily;
 			}
-	
-			&--bottom-text{
+
+			&--bottom-text {
 				font-size: 56px;
 				line-height: calc(56em / 53);
 			}
@@ -113,45 +109,42 @@
 	}
 }
 
-@media screen and (max-width:375px) {
-	.first-view{
-		max-width: GetSize(firstView,spMaxWidth);
+@media screen and (max-width: 375px) {
+	.first-view {
+		max-width: GetSize(firstView, spMaxWidth);
 
-		&__image{
-			width: GetSize(firstView,spImageWidth);
-			height: GetSize(firstView,spImageHeight);
+		&__image {
+			width: GetSize(firstView, spImageWidth);
+			height: GetSize(firstView, spImageHeight);
 
-			&::after{
-				width: GetSize(firstView,spImageWidth);
-				height: GetSize(firstView,spImageHeight);
+			&::after {
+				width: GetSize(firstView, spImageWidth);
+				height: GetSize(firstView, spImageHeight);
 			}
 		}
 
-		&__right-box{
-			width: GetSize(firstView,spRightBoxWidth);
-			height: GetSize(firstView,spRightBoxHeight);
+		&__right-box {
+			width: GetSize(firstView, spRightBoxWidth);
+			height: GetSize(firstView, spRightBoxHeight);
 		}
 
-		&__message{
+		&__message {
+			right: GetPosition(firstView, spMessageRight);
 
-			right: GetPosition(firstView,spMessageRight);
-
-			&--upper-text{
+			&--upper-text {
 				font-size: 16px;
 				font-family: $fontFamilyYuGochic;
 			}
-	
-			&--middle-text{
+
+			&--middle-text {
 				font-size: 16px;
 				font-family: $MontserratFontFamily;
 			}
-	
-			&--bottom-text{
+
+			&--bottom-text {
 				font-size: 56px;
 				line-height: calc(56em / 53);
 			}
 		}
-
 	}
-	
 }
