@@ -56,6 +56,26 @@
 
 @media screen and (max-width:768px){
 	.middle-contents{
-		width: GetSize(middleContents,tableWidth);
+		max-width: GetSize(middleContents,tableWidth);
+	}
+}
+
+@media screen and (max-width:375px) {
+	.middle-contents{
+		max-width: GetSize(middleContents,spWidth);
+
+		&__about{
+
+			&-whitebox{
+				width: 345px;
+				margin: 0 auto;
+
+				&--description{
+					margin: 0;
+					font-size: 14px;
+					height: GetSize(middleContents,spWhiteBoxDescriptionHeight);
+				}
+			}
+		}
 	}
 }

@@ -2,14 +2,23 @@
 @import "../setting/position";
 
 @function GetColor($key) {
+	@if map-get($map: $Color, $key: $key) == null {
+		@return #fff;
+	}
 	@return map-get($map: $Color, $key: $key);
 }
 
 @function GetPosition($key,$block:top) {
+	@if map-get(map-get($Position, $key), $block) == null {
+		@return 0;
+	}
 	@return map-get(map-get($Position, $key), $block);
 }
 
 
 @function GetSize($key,$block:width) {
+	@if map-get(map-get($Size,$key) , $block) == null {
+		@return 0;		
+	}
 	@return map-get(map-get($Size,$key) , $block);
 }

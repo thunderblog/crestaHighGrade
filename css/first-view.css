@@ -124,7 +124,7 @@ middle-contents
     height: 667px;
   }
   .first-view__message {
-    right: 1rem;
+    right: 0;
   }
   .first-view__message--upper-text {
     font-size: 16px;

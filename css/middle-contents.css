@@ -104,7 +104,22 @@ middle-contents
 
 @media screen and (max-width: 768px) {
   .middle-contents {
-    width: 768px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .middle-contents {
+    max-width: 375px;
+  }
+  .middle-contents__about-whitebox {
+    width: 345px;
+    margin: 0 auto;
+  }
+  .middle-contents__about-whitebox--description {
+    margin: 0;
+    font-size: 14px;
+    height: 211px;
   }
 }
 /*# sourceMappingURL=middle-contents.css.map */
