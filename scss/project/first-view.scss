@@ -6,9 +6,10 @@
 
 .first-view {
 	width: GetSize(firstView, width);
-	max-width: GetSize(firstView, maxWidth);
+	//max-width: GetSize(firstView, maxWidth);
 	position: relative;
 	margin: 0 auto;
+	z-index: -1;
 
 	&__image {
 		width: GetSize(firstView, imageWidth);

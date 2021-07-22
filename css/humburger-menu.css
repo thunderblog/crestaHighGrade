@@ -1,4 +1,42 @@
-.humburger-menu {
+body.no-scroll {
+  overflow: hidden;
+}
+
+.humburger-menu__nav {
   display: none;
+}
+
+.humburger-menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  text-align: center;
+  width: 32px;
+  height: 22px;
+  right: 4vw;
+  top: 6px;
+}
+
+.humburger-menu__button span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.humburger-menu__button span:nth-child(1) {
+  top: 10px;
+}
+
+.humburger-menu__button span:nth-child(2) {
+  top: 20px;
+}
+
+.humburger-menu__button span:nth-child(3) {
+  top: 30px;
 }
 /*# sourceMappingURL=humburger-menu.css.map */

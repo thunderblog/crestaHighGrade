@@ -48,10 +48,9 @@ button-common-design
 middle-contents
 ***********/
 .header {
-  width: 1440px;
-  max-width: 1440px;
+  width: 100%;
   background-color: #000;
-  position: relative;
+  position: fixed;
   top: 0;
   margin: 0 auto;
   display: -webkit-box;
@@ -108,10 +107,10 @@ button-common-design
 middle-contents
 ***********/
 .first-view {
-  width: 1440px;
-  max-width: 1440px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
+  z-index: -1;
 }
 
 .first-view__image {
@@ -135,7 +134,7 @@ middle-contents
 }
 
 .first-view__right-box {
-  width: 780px;
+  width: 52vw;
   height: 740px;
   background-color: #000;
   position: absolute;
@@ -801,7 +800,7 @@ middle-contents
 }
 
 .footer {
-  width: 1440px;
+  width: 100%;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,7 +828,45 @@ middle-contents
   }
 }
 
-.humburger-menu {
+body.no-scroll {
+  overflow: hidden;
+}
+
+.humburger-menu__nav {
   display: none;
+}
+
+.humburger-menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  text-align: center;
+  width: 32px;
+  height: 22px;
+  right: 4vw;
+  top: 6px;
+}
+
+.humburger-menu__button span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.humburger-menu__button span:nth-child(1) {
+  top: 10px;
+}
+
+.humburger-menu__button span:nth-child(2) {
+  top: 20px;
+}
+
+.humburger-menu__button span:nth-child(3) {
+  top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

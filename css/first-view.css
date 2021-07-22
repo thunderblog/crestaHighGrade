@@ -12,10 +12,10 @@ button-common-design
 middle-contents
 ***********/
 .first-view {
-  width: 1440px;
-  max-width: 1440px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
+  z-index: -1;
 }
 
 .first-view__image {
@@ -39,7 +39,7 @@ middle-contents
 }
 
 .first-view__right-box {
-  width: 780px;
+  width: 52vw;
   height: 740px;
   background-color: #000;
   position: absolute;

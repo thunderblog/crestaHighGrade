@@ -6,9 +6,9 @@
 
 .header{
 	width: GetSize(header,width);
-	max-width: GetSize(header,maxWidth);
+	//max-width: GetSize(header,maxWidth);
 	background-color: GetColor(black);
-	position: relative;
+	position: fixed;
 	top: GetPosition(header,top);
 	margin: 0 auto;
 	display: flex;

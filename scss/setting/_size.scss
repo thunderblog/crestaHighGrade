@@ -9,7 +9,7 @@ $Size: (
 	),
 
 	header:(
-		width: 1440px,
+		width: 100%,
 		maxWidth: 1440px,
 		mainTitleWidth: 260px,
 		mainTitleHeight: 29px,
@@ -20,11 +20,11 @@ $Size: (
 	),
 
 	firstView:(
-		width: 1440px,
+		width: 100%,
 		maxWidth: 1440px,
 		imageWidth: 1100px,
 		imageHeight: 640px,
-		rightBoxWidth: 780px,
+		rightBoxWidth: 52vw,
 		rightGBoxHeight: 740px,
 		messageWidth: 292px,
 		messageTopPosition: 10rem,
