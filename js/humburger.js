@@ -9,9 +9,9 @@ jQuery(function(){
 		const FIRST_VIEW_HEIGHT = $(".first-view__image").outerHeight() - 50;
 
 		if($(window).scrollTop() > FIRST_VIEW_HEIGHT){
-			$("#main-title").css('background-image', 'url(../img/site-logo-black.png)');
+			$("#main-title").addClass('logo-black');
 		}else{
-			$("#main-title").css('background-image', 'url(../img/site-logo.png)');
+			$("#main-title").removeClass('logo-black');
 		}
 
 		if($(window).scrollTop() > FIRST_VIEW_RIGHTBOX_HEIGHT){
@@ -23,13 +23,14 @@ jQuery(function(){
 
 	$('.humburger-menu__button').click(function () { 
 		$(this).toggleClass('active');
+		$("#main-title").toggleClass('logo-black');
 
 		if($(this).hasClass('active')){
 			$('.humburger-menu__nav').css('opacity','100');
 			$('.humburger-menu__overlay').css('height', '100vh');
 			$('.body').addClass('no-scroll');
 			$(".humburger-menu__button--line").css('background-color', 'white');
-			$("#main-title").css('background-image', 'url(img/site-logo.png)');
+			$("#main-title").removeClass('logo-black');
 		}else{
 			$('.humburger-menu__nav').css('opacity', '0');
 			$('.humburger-menu__overlay').css('height', '0');
@@ -37,10 +38,8 @@ jQuery(function(){
 
 			if($(window).scrollTop() > FIRST_VIEW_RIGHTBOX_HEIGHT){
 				$(".humburger-menu__button--line").css('background-color', 'black');
-				$("#main-title").css('background-image', 'url(img/site-logo-black.png)');
 			}else{
 				$(".humburger-menu__button--line").css('background-color', 'white');
-				$("#main-title").css('background-image', 'url(img/site-logo.png)');
 			}
 		}
 	});

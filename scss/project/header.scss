@@ -24,7 +24,7 @@
 
 		z-index: 1;
 
-		background-image: url(../img/site-logo.png);
+		background-image: url(../../img/site-logo.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -33,7 +33,12 @@
 			height: GetSize(header,mainTitleHeight);
 			cursor: pointer;
 		}
+
+		&.logo-black{
+			background-image: url(../../img/site-logo-black.png);
+		}
 	}
+
 }
 
 
