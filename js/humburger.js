@@ -38,8 +38,11 @@ jQuery(function(){
 
 			if($(window).scrollTop() > FIRST_VIEW_RIGHTBOX_HEIGHT){
 				$(".humburger-menu__button--line").css('background-color', 'black');
+				$("#main-title").addClass('logo-black');
 			}else{
 				$(".humburger-menu__button--line").css('background-color', 'white');
+				$("#main-title").removeClass('logo-black');
+
 			}
 		}
 	});
