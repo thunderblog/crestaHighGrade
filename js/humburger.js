@@ -29,7 +29,7 @@ jQuery(function(){
 			$('.humburger-menu__overlay').css('height', '100vh');
 			$('.body').addClass('no-scroll');
 			$(".humburger-menu__button--line").css('background-color', 'white');
-			$("#main-title").css('background-image', 'url(../img/site-logo.png)');
+			$("#main-title").css('background-image', 'url(img/site-logo.png)');
 		}else{
 			$('.humburger-menu__nav').css('opacity', '0');
 			$('.humburger-menu__overlay').css('height', '0');
@@ -37,10 +37,10 @@ jQuery(function(){
 
 			if($(window).scrollTop() > FIRST_VIEW_RIGHTBOX_HEIGHT){
 				$(".humburger-menu__button--line").css('background-color', 'black');
-				$("#main-title").css('background-image', 'url(../img/site-logo-black.png)');
+				$("#main-title").css('background-image', 'url(img/site-logo-black.png)');
 			}else{
 				$(".humburger-menu__button--line").css('background-color', 'white');
-				$("#main-title").css('background-image', 'url(../img/site-logo.png)');
+				$("#main-title").css('background-image', 'url(img/site-logo.png)');
 			}
 		}
 	});
