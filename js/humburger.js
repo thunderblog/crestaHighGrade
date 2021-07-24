@@ -18,8 +18,18 @@ jQuery(function(){
 		}else{
 			$(".humburger-menu__button--line").css('background-color', 'white');
 		}
-
-
 	});
 
+	$('.humburger-menu__button').click(function () { 
+		$(this).toggleClass('active');
+
+		if($(this).hasClass('active')){
+			$('.humburger-menu__nav').css('opacity', '100');
+			$('.body').addClass('no-scroll');
+			$(".humburger-menu__button--line").css('background-color', 'white');
+		}else{
+			$('.humburger-menu__nav').css('opacity', '0');
+			$('.body').removeClass('no-scroll');
+		}
+	});
 });

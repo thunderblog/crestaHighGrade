@@ -1,10 +1,37 @@
-﻿
+﻿@import "../setting/_typography.scss";
+
 body.no-scroll{
 	overflow: hidden;
 }
 
 .humburger-menu__nav{
-	display: none;
+	//display: none;
+
+	margin: 0;
+	position: fixed;
+	height: 100%;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	width: 520px;
+	background-color: black;
+	text-align: center;
+	transition: opacity .6s ease, visibility .6s ease;
+	list-style-type: none;
+	padding-top: 180px;
+	opacity: 0;
+
+	li{
+		padding-bottom: 30px;
+
+		a{
+		   color: white;
+		   text-decoration: none;
+		   font-size: 20px;
+		   font-weight: bold;
+		   font-family: $MontserratFontFamily;
+	   }
+	}
 }
 
 .humburger-menu__button{
@@ -13,8 +40,8 @@ body.no-scroll{
 	z-index: 3;
 	cursor: pointer;
 	text-align: center;
-	width: 32px;
-	height: 22px;
+	width: 42px;
+	height: 42px;
 	right: 4vw;
 	top: 6px;
 
@@ -23,7 +50,9 @@ body.no-scroll{
 		position: absolute;
 		width: 30px;
 		height: 2px;
+		left: 6px;
 		background-color: #fff;
+		transition: 0.3s ease-in-out;
 
 		&:nth-child(1){
 			top: 10px;
@@ -35,6 +64,22 @@ body.no-scroll{
 
 		&:nth-child(3){
 			top: 30px;
+		}
+	}
+}
+
+.humburger-menu__button.active{
+	span{
+
+		&:nth-child(1){
+			top: 16px;
+			left: 6px;
+			transform: rotate(-45deg);
+		}
+
+		&:nth-child(n+2){
+			top: 16px;
+			transform: rotate(45deg);
 		}
 	}
 }
