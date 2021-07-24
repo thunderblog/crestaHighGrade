@@ -12,6 +12,7 @@
 	top: GetPosition(header,top);
 	margin: 0 auto;
 	display: flex;
+	z-index: 3;
 
 	&__main-title{
 		display: flex;

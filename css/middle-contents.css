@@ -13,7 +13,7 @@ middle-contents
 /************
 common
 ************/
-.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+.margin-left-30px, .middle-contents__whitebox--title, .middle-contents__whitebox--description, .middle-contents__whitebox--button {
   margin-left: 30px !important;
 }
 
@@ -45,7 +45,7 @@ button-common-design
 /***********
 middle-contents
 ***********/
-.button-common-design, .middle-contents__about-whitebox--button {
+.button-common-design, .middle-contents__whitebox--button {
   width: 160px;
   height: 36px;
   background-color: #000;
@@ -78,24 +78,23 @@ middle-contents
           align-items: center;
 }
 
-.middle-contents__about-whitebox {
+.middle-contents__whitebox {
   background-color: #fff;
   width: 590px;
   height: 387px;
-  top: 0;
-  left: 0;
   opacity: GetSiteColor(aboutUsBackGroundOpacity);
   margin-left: calc((50 / 1100) * 100%);
+  margin-top: 110px;
 }
 
-.middle-contents__about-whitebox--title {
+.middle-contents__whitebox--title {
   padding-top: 50px;
   font-size: 32px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
-.middle-contents__about-whitebox--description {
+.middle-contents__whitebox--description {
   max-width: 530px;
   font-size: 16px;
   line-height: calc(32em / 16);
@@ -112,10 +111,10 @@ middle-contents
   .middle-contents {
     max-width: 375px;
   }
-  .middle-contents__about-whitebox {
+  .middle-contents-whitebox {
     width: 345px;
   }
-  .middle-contents__about-whitebox--description {
+  .middle-contents-whitebox--description {
     width: 300px;
     margin: 0;
     font-size: 14px;

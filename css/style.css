@@ -11,7 +11,7 @@ common
   margin: auto;
 }
 
-.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+.margin-left-30px, .middle-contents__whitebox--title, .middle-contents__whitebox--description, .middle-contents__whitebox--button {
   margin-left: 30px !important;
 }
 
@@ -56,6 +56,7 @@ middle-contents
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
 }
 
 .header__main-title {
@@ -257,7 +258,7 @@ common
   margin: auto;
 }
 
-.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+.margin-left-30px, .middle-contents__whitebox--title, .middle-contents__whitebox--description, .middle-contents__whitebox--button {
   margin-left: 30px !important;
 }
 
@@ -289,7 +290,7 @@ button-common-design
 /***********
 middle-contents
 ***********/
-.button-common-design, .middle-contents__about-whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
+.button-common-design, .middle-contents__whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
   width: 160px;
   height: 36px;
   background-color: #000;
@@ -322,24 +323,23 @@ middle-contents
           align-items: center;
 }
 
-.middle-contents__about-whitebox {
+.middle-contents__whitebox {
   background-color: #fff;
   width: 590px;
   height: 387px;
-  top: 0;
-  left: 0;
   opacity: GetSiteColor(aboutUsBackGroundOpacity);
   margin-left: calc((50 / 1100) * 100%);
+  margin-top: 110px;
 }
 
-.middle-contents__about-whitebox--title {
+.middle-contents__whitebox--title {
   padding-top: 50px;
   font-size: 32px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
-.middle-contents__about-whitebox--description {
+.middle-contents__whitebox--description {
   max-width: 530px;
   font-size: 16px;
   line-height: calc(32em / 16);
@@ -356,10 +356,10 @@ middle-contents
   .middle-contents {
     max-width: 375px;
   }
-  .middle-contents__about-whitebox {
+  .middle-contents-whitebox {
     width: 345px;
   }
-  .middle-contents__about-whitebox--description {
+  .middle-contents-whitebox--description {
     width: 300px;
     margin: 0;
     font-size: 14px;
@@ -389,7 +389,7 @@ common
   margin: auto;
 }
 
-.margin-left-30px, .middle-contents__about-whitebox--title, .middle-contents__about-whitebox--description, .middle-contents__about-whitebox--button {
+.margin-left-30px, .middle-contents__whitebox--title, .middle-contents__whitebox--description, .middle-contents__whitebox--button {
   margin-left: 30px !important;
 }
 
@@ -421,7 +421,7 @@ button-common-design
 /***********
 middle-contents
 ***********/
-.button-common-design, .middle-contents__about-whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
+.button-common-design, .middle-contents__whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
   width: 160px;
   height: 36px;
   background-color: #000;
@@ -600,7 +600,7 @@ button-common-design
 /***********
 middle-contents
 ***********/
-.button-common-design, .middle-contents__about-whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
+.button-common-design, .middle-contents__whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
   width: 160px;
   height: 36px;
   background-color: #000;
@@ -704,7 +704,7 @@ button-common-design
 /***********
 middle-contents
 ***********/
-.button-common-design, .middle-contents__about-whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
+.button-common-design, .middle-contents__whitebox--button, .works-culture__boxes--left__button, .works-culture__boxes--right__button, .latest-topics__button, .contact__message-box-button {
   width: 160px;
   height: 36px;
   background-color: #000;
@@ -838,6 +838,15 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.humburger-menu {
+  width: 100%;
+}
+
+.humburger-menu__overlay {
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .humburger-menu__nav {
   margin: 0;
   position: fixed;
@@ -845,11 +854,13 @@ body.no-scroll {
   z-index: 2;
   top: 0;
   right: 0;
-  width: 520px;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: black;
   text-align: center;
-  -webkit-transition: opacity .6s ease, visibility .6s ease;
-  transition: opacity .6s ease, visibility .6s ease;
+  -webkit-transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
   list-style-type: none;
   padding-top: 180px;
   opacity: 0;
@@ -911,7 +922,7 @@ body.no-scroll {
           transform: rotate(-45deg);
 }
 
-.humburger-menu__button.active span:nth-child(n+2) {
+.humburger-menu__button.active span:nth-child(n + 2) {
   top: 16px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);

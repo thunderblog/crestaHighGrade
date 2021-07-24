@@ -19,6 +19,7 @@ middle-contents
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
 }
 
 .header__main-title {
