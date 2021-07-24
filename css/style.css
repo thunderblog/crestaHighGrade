@@ -68,7 +68,7 @@ middle-contents
   top: 30px;
   left: 4vw;
   z-index: 1;
-  background-image: url(../../img/site-logo.png);
+  background-image: url(../img/site-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -80,7 +80,7 @@ middle-contents
 }
 
 .header__main-title.logo-black {
-  background-image: url(../../img/site-logo-black.png);
+  background-image: url(../img/site-logo-black.png);
 }
 
 @media screen and (max-width: 768px) {
