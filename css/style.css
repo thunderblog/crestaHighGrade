@@ -446,7 +446,7 @@ middle-contents
 
 .works-culture__background {
   background-color: #f0f0f0;
-  width: 1440px;
+  max-width: 1440px;
   height: 770px;
   top: -180px;
   z-index: -1;
@@ -724,7 +724,7 @@ middle-contents
 }
 
 .contact {
-  width: 1440px;
+  max-width: 1440px;
   min-height: 570px;
   background-color: #f2f2f2;
   margin: 0 auto;

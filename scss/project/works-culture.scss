@@ -11,7 +11,7 @@
 	&__background {
 		@extend %__absolute-LR-center;
 		background-color: GetColor(worksCultureBackGround);
-		width: $works-culture-background-width;
+		max-width: $works-culture-background-width;
 		height: $works-culture-background-height;
 		top: ($works-culture-positon-top - $works-culture-margin-top);
 		z-index: map-get($map: $zIndex, $key: rayerM1);

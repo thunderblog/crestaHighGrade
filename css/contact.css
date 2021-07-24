@@ -42,7 +42,7 @@ middle-contents
 }
 
 .contact {
-  width: 1440px;
+  max-width: 1440px;
   min-height: 570px;
   background-color: #f2f2f2;
   margin: 0 auto;
